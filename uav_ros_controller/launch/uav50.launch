@@ -1,0 +1,562 @@
+<?xml version="1.0"?>
+
+<launch>
+  <!-- We resume the logic in empty_world.launch, changing only the name of the world to be launched -->
+  <include file="$(find uav_ros_controller)/launch/empty_world.launch"/>
+
+   <arg name="model" default="$(find hector_quadrotor_description)/urdf/quadrotor_hokuyo_utm30lx.gazebo.xacro"/>
+
+
+    <group ns="quad0">
+   <include file="$(find uav_ros_controller)/launch/spawn_quadrotor.launch">
+   <arg name="name" value="quad0" />
+   <arg name="tf_prefix" value="quad0" />
+   <arg name="model" value="$(arg model)" />
+   <arg name="x" value="0"/>
+   <arg name="y" value="0"/>
+   <arg name="z" value="0.5"/>
+   </include>
+   </group> 
+
+   <group ns="quad1">
+   <include file="$(find uav_ros_controller)/launch/spawn_quadrotor.launch">
+   <arg name="name" value="quad1" />
+   <arg name="tf_prefix" value="quad1" />
+   <arg name="model" value="$(arg model)" />
+   <arg name="x" value="0"/>
+   <arg name="y" value="1"/>
+   <arg name="z" value="0.5"/>
+   </include>
+   </group> 
+
+   <group ns="quad2">
+   <include file="$(find uav_ros_controller)/launch/spawn_quadrotor.launch">
+   <arg name="name" value="quad2" />
+   <arg name="tf_prefix" value="quad2" />
+   <arg name="model" value="$(arg model)" />
+   <arg name="x" value="0"/>
+   <arg name="y" value="2"/>
+   <arg name="z" value="0.5"/>
+   </include>
+   </group> 
+
+   <group ns="quad3">
+   <include file="$(find uav_ros_controller)/launch/spawn_quadrotor.launch">
+   <arg name="name" value="quad3" />
+   <arg name="tf_prefix" value="quad3" />
+   <arg name="model" value="$(arg model)" />
+   <arg name="x" value="0"/>
+   <arg name="y" value="3"/>
+   <arg name="z" value="0.5"/>
+   </include>
+   </group> 
+
+    <group ns="quad4">
+   <include file="$(find uav_ros_controller)/launch/spawn_quadrotor.launch">
+   <arg name="name" value="quad4" />
+   <arg name="tf_prefix" value="quad4" />
+   <arg name="model" value="$(arg model)" />
+   <arg name="x" value="0"/>
+   <arg name="y" value="4"/>
+   <arg name="z" value="0.5"/>
+   </include>
+   </group> 
+
+   <group ns="quad5">
+   <include file="$(find uav_ros_controller)/launch/spawn_quadrotor.launch">
+   <arg name="name" value="quad5" />
+   <arg name="tf_prefix" value="quad5" />
+   <arg name="model" value="$(arg model)" />
+   <arg name="x" value="0"/>
+   <arg name="y" value="5"/>
+   <arg name="z" value="0.5"/>
+   </include>
+   </group> 
+
+   <group ns="quad6">
+   <include file="$(find uav_ros_controller)/launch/spawn_quadrotor.launch">
+   <arg name="name" value="quad6" />
+   <arg name="tf_prefix" value="quad6" />
+   <arg name="model" value="$(arg model)" />
+   <arg name="x" value="0"/>
+   <arg name="y" value="6"/>
+   <arg name="z" value="0.5"/>
+   </include>
+   </group> 
+
+   <group ns="quad7">
+   <include file="$(find uav_ros_controller)/launch/spawn_quadrotor.launch">
+   <arg name="name" value="quad7" />
+   <arg name="tf_prefix" value="quad7" />
+   <arg name="model" value="$(arg model)" />
+   <arg name="x" value="0"/>
+   <arg name="y" value="7"/>
+   <arg name="z" value="0.5"/>
+   </include>
+   </group> 
+
+    <group ns="quad8">
+   <include file="$(find uav_ros_controller)/launch/spawn_quadrotor.launch">
+   <arg name="name" value="quad8" />
+   <arg name="tf_prefix" value="quad8" />
+   <arg name="model" value="$(arg model)" />
+   <arg name="x" value="0"/>
+   <arg name="y" value="8"/>
+   <arg name="z" value="0.5"/>
+   </include>
+   </group> 
+
+   <group ns="quad9">
+   <include file="$(find uav_ros_controller)/launch/spawn_quadrotor.launch">
+   <arg name="name" value="quad9" />
+   <arg name="tf_prefix" value="quad9" />
+   <arg name="model" value="$(arg model)" />
+   <arg name="x" value="0"/>
+   <arg name="y" value="9"/>
+   <arg name="z" value="0.5"/>
+   </include>
+   </group> 
+
+
+   <group ns="quad10">
+   <include file="$(find uav_ros_controller)/launch/spawn_quadrotor.launch">
+   <arg name="name" value="quad10" />
+   <arg name="tf_prefix" value="quad10" />
+   <arg name="model" value="$(arg model)" />
+   <arg name="x" value="1"/>
+   <arg name="y" value="0"/>
+   <arg name="z" value="0.5"/>
+   </include>
+   </group> 
+
+   <group ns="quad11">
+   <include file="$(find uav_ros_controller)/launch/spawn_quadrotor.launch">
+   <arg name="name" value="quad11" />
+   <arg name="tf_prefix" value="quad11" />
+   <arg name="model" value="$(arg model)" />
+   <arg name="x" value="1.0"/>
+   <arg name="y" value="1.0"/>
+   <arg name="z" value="0.5"/>
+   </include>
+   </group> 
+
+    <group ns="quad12">
+   <include file="$(find uav_ros_controller)/launch/spawn_quadrotor.launch">
+   <arg name="name" value="quad12" />
+   <arg name="tf_prefix" value="quad12" />
+   <arg name="model" value="$(arg model)" />
+   <arg name="x" value="1.0"/>
+   <arg name="y" value="2.0"/>
+   <arg name="z" value="0.5"/>
+   </include>
+   </group> 
+
+   <group ns="quad13">
+   <include file="$(find uav_ros_controller)/launch/spawn_quadrotor.launch">
+   <arg name="name" value="quad13" />
+   <arg name="tf_prefix" value="quad13" />
+   <arg name="model" value="$(arg model)" />
+   <arg name="x" value="1.0"/>
+   <arg name="y" value="3.0"/>
+   <arg name="z" value="0.5"/>
+   </include>
+   </group> 
+
+   <group ns="quad14">
+   <include file="$(find uav_ros_controller)/launch/spawn_quadrotor.launch">
+   <arg name="name" value="quad14" />
+   <arg name="tf_prefix" value="quad14" />
+   <arg name="model" value="$(arg model)" />
+   <arg name="x" value="1.0"/>
+   <arg name="y" value="4.0"/>
+   <arg name="z" value="0.5"/>
+   </include>
+   </group> 
+
+   <group ns="quad15">
+   <include file="$(find uav_ros_controller)/launch/spawn_quadrotor.launch">
+   <arg name="name" value="quad15" />
+   <arg name="tf_prefix" value="quad15" />
+   <arg name="model" value="$(arg model)" />
+   <arg name="x" value="1.0"/>
+   <arg name="y" value="5.0"/>
+   <arg name="z" value="0.5"/>
+   </include>
+   </group> 
+
+    <group ns="quad16">
+   <include file="$(find uav_ros_controller)/launch/spawn_quadrotor.launch">
+   <arg name="name" value="quad16" />
+   <arg name="tf_prefix" value="quad16" />
+   <arg name="model" value="$(arg model)" />
+   <arg name="x" value="1.0"/>
+   <arg name="y" value="6.0"/>
+   <arg name="z" value="0.5"/>
+   </include>
+   </group> 
+
+   <group ns="quad17">
+   <include file="$(find uav_ros_controller)/launch/spawn_quadrotor.launch">
+   <arg name="name" value="quad17" />
+   <arg name="tf_prefix" value="quad17" />
+   <arg name="model" value="$(arg model)" />
+   <arg name="x" value="1.0"/>
+   <arg name="y" value="7"/>
+   <arg name="z" value="0.5"/>
+   </include>
+   </group> 
+
+   <group ns="quad18">
+   <include file="$(find uav_ros_controller)/launch/spawn_quadrotor.launch">
+   <arg name="name" value="quad18" />
+   <arg name="tf_prefix" value="quad18" />
+   <arg name="model" value="$(arg model)" />
+   <arg name="x" value="1.0"/>
+   <arg name="y" value="8.0"/>
+   <arg name="z" value="0.5"/>
+   </include>
+   </group> 
+
+   <group ns="quad19">
+   <include file="$(find uav_ros_controller)/launch/spawn_quadrotor.launch">
+   <arg name="name" value="quad19" />
+   <arg name="tf_prefix" value="quad19" />
+   <arg name="model" value="$(arg model)" />
+   <arg name="x" value="1.0"/>
+   <arg name="y" value="9.0"/>
+   <arg name="z" value="0.5"/>
+   </include>
+   </group> 
+
+   <group ns="quad20">
+   <include file="$(find uav_ros_controller)/launch/spawn_quadrotor.launch">
+   <arg name="name" value="quad20" />
+   <arg name="tf_prefix" value="quad20" />
+   <arg name="model" value="$(arg model)" />
+   <arg name="x" value="2"/>
+   <arg name="y" value="0"/>
+   <arg name="z" value="0.5"/>
+   </include>
+   </group> 
+
+   <group ns="quad21">
+   <include file="$(find uav_ros_controller)/launch/spawn_quadrotor.launch">
+   <arg name="name" value="quad21" />
+   <arg name="tf_prefix" value="quad21" />
+   <arg name="model" value="$(arg model)" />
+   <arg name="x" value="2"/>
+   <arg name="y" value="1"/>
+   <arg name="z" value="0.5"/>
+   </include>
+   </group> 
+
+   <group ns="quad22">
+   <include file="$(find uav_ros_controller)/launch/spawn_quadrotor.launch">
+   <arg name="name" value="quad22" />
+   <arg name="tf_prefix" value="quad22" />
+   <arg name="model" value="$(arg model)" />
+   <arg name="x" value="2"/>
+   <arg name="y" value="2"/>
+   <arg name="z" value="0.5"/>
+   </include>
+   </group> 
+
+   <group ns="quad23">
+   <include file="$(find uav_ros_controller)/launch/spawn_quadrotor.launch">
+   <arg name="name" value="quad23" />
+   <arg name="tf_prefix" value="quad23" />
+   <arg name="model" value="$(arg model)" />
+   <arg name="x" value="2"/>
+   <arg name="y" value="3"/>
+   <arg name="z" value="0.5"/>
+   </include>
+   </group> 
+
+    <group ns="quad24">
+   <include file="$(find uav_ros_controller)/launch/spawn_quadrotor.launch">
+   <arg name="name" value="quad24" />
+   <arg name="tf_prefix" value="quad24" />
+   <arg name="model" value="$(arg model)" />
+   <arg name="x" value="2"/>
+   <arg name="y" value="4"/>
+   <arg name="z" value="0.5"/>
+   </include>
+   </group> 
+
+   <group ns="quad25">
+   <include file="$(find uav_ros_controller)/launch/spawn_quadrotor.launch">
+   <arg name="name" value="quad25" />
+   <arg name="tf_prefix" value="quad25" />
+   <arg name="model" value="$(arg model)" />
+   <arg name="x" value="2"/>
+   <arg name="y" value="5"/>
+   <arg name="z" value="0.5"/>
+   </include>
+   </group> 
+
+   <group ns="quad26">
+   <include file="$(find uav_ros_controller)/launch/spawn_quadrotor.launch">
+   <arg name="name" value="quad26" />
+   <arg name="tf_prefix" value="quad26" />
+   <arg name="model" value="$(arg model)" />
+   <arg name="x" value="2"/>
+   <arg name="y" value="6"/>
+   <arg name="z" value="0.5"/>
+   </include>
+   </group> 
+
+   <group ns="quad27">
+   <include file="$(find uav_ros_controller)/launch/spawn_quadrotor.launch">
+   <arg name="name" value="quad27" />
+   <arg name="tf_prefix" value="quad7" />
+   <arg name="model" value="$(arg model)" />
+   <arg name="x" value="2"/>
+   <arg name="y" value="7"/>
+   <arg name="z" value="0.5"/>
+   </include>
+   </group> 
+
+    <group ns="quad28">
+   <include file="$(find uav_ros_controller)/launch/spawn_quadrotor.launch">
+   <arg name="name" value="quad28" />
+   <arg name="tf_prefix" value="quad28" />
+   <arg name="model" value="$(arg model)" />
+   <arg name="x" value="2"/>
+   <arg name="y" value="8"/>
+   <arg name="z" value="0.5"/>
+   </include>
+   </group> 
+
+   <group ns="quad29">
+   <include file="$(find uav_ros_controller)/launch/spawn_quadrotor.launch">
+   <arg name="name" value="quad29" />
+   <arg name="tf_prefix" value="quad29" />
+   <arg name="model" value="$(arg model)" />
+   <arg name="x" value="2"/>
+   <arg name="y" value="9"/>
+   <arg name="z" value="0.5"/>
+   </include>
+   </group> 
+
+    <group ns="quad30">
+   <include file="$(find uav_ros_controller)/launch/spawn_quadrotor.launch">
+   <arg name="name" value="quad30" />
+   <arg name="tf_prefix" value="quad30" />
+   <arg name="model" value="$(arg model)" />
+   <arg name="x" value="3"/>
+   <arg name="y" value="0"/>
+   <arg name="z" value="0.5"/>
+   </include>
+   </group> 
+
+   <group ns="quad31">
+   <include file="$(find uav_ros_controller)/launch/spawn_quadrotor.launch">
+   <arg name="name" value="quad31" />
+   <arg name="tf_prefix" value="quad31" />
+   <arg name="model" value="$(arg model)" />
+   <arg name="x" value="3"/>
+   <arg name="y" value="1"/>
+   <arg name="z" value="0.5"/>
+   </include>
+   </group> 
+
+   <group ns="quad32">
+   <include file="$(find uav_ros_controller)/launch/spawn_quadrotor.launch">
+   <arg name="name" value="quad32" />
+   <arg name="tf_prefix" value="quad32" />
+   <arg name="model" value="$(arg model)" />
+   <arg name="x" value="3"/>
+   <arg name="y" value="2"/>
+   <arg name="z" value="0.5"/>
+   </include>
+   </group> 
+
+   <group ns="quad33">
+   <include file="$(find uav_ros_controller)/launch/spawn_quadrotor.launch">
+   <arg name="name" value="quad33" />
+   <arg name="tf_prefix" value="quad33" />
+   <arg name="model" value="$(arg model)" />
+   <arg name="x" value="3"/>
+   <arg name="y" value="3"/>
+   <arg name="z" value="0.5"/>
+   </include>
+   </group> 
+
+    <group ns="quad34">
+   <include file="$(find uav_ros_controller)/launch/spawn_quadrotor.launch">
+   <arg name="name" value="quad34" />
+   <arg name="tf_prefix" value="quad34" />
+   <arg name="model" value="$(arg model)" />
+   <arg name="x" value="3"/>
+   <arg name="y" value="4"/>
+   <arg name="z" value="0.5"/>
+   </include>
+   </group> 
+
+   <group ns="quad35">
+   <include file="$(find uav_ros_controller)/launch/spawn_quadrotor.launch">
+   <arg name="name" value="quad35" />
+   <arg name="tf_prefix" value="quad35" />
+   <arg name="model" value="$(arg model)" />
+   <arg name="x" value="3"/>
+   <arg name="y" value="5"/>
+   <arg name="z" value="0.5"/>
+   </include>
+   </group> 
+
+   <group ns="quad36">
+   <include file="$(find uav_ros_controller)/launch/spawn_quadrotor.launch">
+   <arg name="name" value="quad36" />
+   <arg name="tf_prefix" value="quad36" />
+   <arg name="model" value="$(arg model)" />
+   <arg name="x" value="3"/>
+   <arg name="y" value="6"/>
+   <arg name="z" value="0.5"/>
+   </include>
+   </group> 
+
+   <group ns="quad37">
+   <include file="$(find uav_ros_controller)/launch/spawn_quadrotor.launch">
+   <arg name="name" value="quad37" />
+   <arg name="tf_prefix" value="quad37" />
+   <arg name="model" value="$(arg model)" />
+   <arg name="x" value="3"/>
+   <arg name="y" value="7"/>
+   <arg name="z" value="0.5"/>
+   </include>
+   </group> 
+
+    <group ns="quad38">
+   <include file="$(find uav_ros_controller)/launch/spawn_quadrotor.launch">
+   <arg name="name" value="quad38" />
+   <arg name="tf_prefix" value="quad38" />
+   <arg name="model" value="$(arg model)" />
+   <arg name="x" value="3"/>
+   <arg name="y" value="8"/>
+   <arg name="z" value="0.5"/>
+   </include>
+   </group> 
+
+   <group ns="quad39">
+   <include file="$(find uav_ros_controller)/launch/spawn_quadrotor.launch">
+   <arg name="name" value="quad39" />
+   <arg name="tf_prefix" value="quad39" />
+   <arg name="model" value="$(arg model)" />
+   <arg name="x" value="3"/>
+   <arg name="y" value="9"/>
+   <arg name="z" value="0.5"/>
+   </include>
+   </group> 
+
+
+    <group ns="quad40">
+   <include file="$(find uav_ros_controller)/launch/spawn_quadrotor.launch">
+   <arg name="name" value="quad40" />
+   <arg name="tf_prefix" value="quad40" />
+   <arg name="model" value="$(arg model)" />
+   <arg name="x" value="4"/>
+   <arg name="y" value="0"/>
+   <arg name="z" value="0.5"/>
+   </include>
+   </group> 
+
+   <group ns="quad41">
+   <include file="$(find uav_ros_controller)/launch/spawn_quadrotor.launch">
+   <arg name="name" value="quad41" />
+   <arg name="tf_prefix" value="quad41" />
+   <arg name="model" value="$(arg model)" />
+   <arg name="x" value="4"/>
+   <arg name="y" value="1"/>
+   <arg name="z" value="0.5"/>
+   </include>
+   </group> 
+
+   <group ns="quad42">
+   <include file="$(find uav_ros_controller)/launch/spawn_quadrotor.launch">
+   <arg name="name" value="quad42" />
+   <arg name="tf_prefix" value="quad42" />
+   <arg name="model" value="$(arg model)" />
+   <arg name="x" value="4"/>
+   <arg name="y" value="2"/>
+   <arg name="z" value="0.5"/>
+   </include>
+   </group> 
+
+   <group ns="quad43">
+   <include file="$(find uav_ros_controller)/launch/spawn_quadrotor.launch">
+   <arg name="name" value="quad43" />
+   <arg name="tf_prefix" value="quad43" />
+   <arg name="model" value="$(arg model)" />
+   <arg name="x" value="4"/>
+   <arg name="y" value="3"/>
+   <arg name="z" value="0.5"/>
+   </include>
+   </group> 
+
+    <group ns="quad44">
+   <include file="$(find uav_ros_controller)/launch/spawn_quadrotor.launch">
+   <arg name="name" value="quad44" />
+   <arg name="tf_prefix" value="quad44" />
+   <arg name="model" value="$(arg model)" />
+   <arg name="x" value="4"/>
+   <arg name="y" value="4"/>
+   <arg name="z" value="0.5"/>
+   </include>
+   </group> 
+
+   <group ns="quad45">
+   <include file="$(find uav_ros_controller)/launch/spawn_quadrotor.launch">
+   <arg name="name" value="quad45" />
+   <arg name="tf_prefix" value="quad45" />
+   <arg name="model" value="$(arg model)" />
+   <arg name="x" value="4"/>
+   <arg name="y" value="5"/>
+   <arg name="z" value="0.5"/>
+   </include>
+   </group> 
+
+   <group ns="quad46">
+   <include file="$(find uav_ros_controller)/launch/spawn_quadrotor.launch">
+   <arg name="name" value="quad46" />
+   <arg name="tf_prefix" value="quad46" />
+   <arg name="model" value="$(arg model)" />
+   <arg name="x" value="4"/>
+   <arg name="y" value="6"/>
+   <arg name="z" value="0.5"/>
+   </include>
+   </group> 
+
+   <group ns="quad47">
+   <include file="$(find uav_ros_controller)/launch/spawn_quadrotor.launch">
+   <arg name="name" value="quad47" />
+   <arg name="tf_prefix" value="quad47" />
+   <arg name="model" value="$(arg model)" />
+   <arg name="x" value="4"/>
+   <arg name="y" value="7"/>
+   <arg name="z" value="0.5"/>
+   </include>
+   </group> 
+
+    <group ns="quad48">
+   <include file="$(find uav_ros_controller)/launch/spawn_quadrotor.launch">
+   <arg name="name" value="quad48" />
+   <arg name="tf_prefix" value="quad48" />
+   <arg name="model" value="$(arg model)" />
+   <arg name="x" value="4"/>
+   <arg name="y" value="8"/>
+   <arg name="z" value="0.5"/>
+   </include>
+   </group> 
+
+   <group ns="quad49">
+   <include file="$(find uav_ros_controller)/launch/spawn_quadrotor.launch">
+   <arg name="name" value="quad49" />
+   <arg name="tf_prefix" value="quad49" />
+   <arg name="model" value="$(arg model)" />
+   <arg name="x" value="4"/>
+   <arg name="y" value="9"/>
+   <arg name="z" value="0.5"/>
+   </include>
+   </group> 
+
+</launch>

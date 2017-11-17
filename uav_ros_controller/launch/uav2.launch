@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+
+<launch>
+  <!-- We resume the logic in empty_world.launch, changing only the name of the world to be launched -->
+  <include file="$(find uav_ros_controller)/launch/empty_world.launch"/>
+
+ <!--
+ <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find hector_Astar)/worlds/formation_6_quad.world"/>
+  </include>
+-->
+
+   <arg name="model" default="$(find hector_quadrotor_description)/urdf/quadrotor_hokuyo_utm30lx.gazebo.xacro"/>
+
+
+    <group ns="quad0">
+   <include file="$(find uav_ros_controller)/launch/spawn_quadrotor.launch">
+   <arg name="name" value="quad0" />
+   <arg name="tf_prefix" value="quad0" />
+   <arg name="model" value="$(arg model)" />
+   <arg name="x" value="1.0"/>
+   <arg name="y" value="0"/>
+   <arg name="z" value="0.5"/>
+   </include>
+   </group> 
+
+   <group ns="quad1">
+   <include file="$(find uav_ros_controller)/launch/spawn_quadrotor.launch">
+   <arg name="name" value="quad1" />
+   <arg name="tf_prefix" value="quad1" />
+   <arg name="model" value="$(arg model)" />
+   <arg name="x" value="-1.0"/>
+   <arg name="y" value="0"/>
+   <arg name="z" value="0.5"/>
+   </include>
+   </group> 
+
+</launch>
